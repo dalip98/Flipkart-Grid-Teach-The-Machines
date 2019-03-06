@@ -15,6 +15,9 @@ The accuracy of the model was decided using Intersection Over Union(IoU) .
 
 The training and test datasets are included in this repository.
 
+Link for further details of the question- [dare2Compete](https://dare2compete.com/o/Flipkart-GRiD-Teach-The-Machines-2019-74928)
+
+
 **Solution**
 
 This problem was solved by me using CNN using the keras library and tensorflow as backend.
