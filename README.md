@@ -13,6 +13,8 @@ We need to predict the coordinates of bottom-left and top-right corners of the b
 
 The accuracy of the model was decided using Intersection Over Union(IoU) .
 
+The training and test datasets are included in this repository.
+
 **Solution**
 
 This problem was solved by me using CNN using the keras library and tensorflow as backend.
