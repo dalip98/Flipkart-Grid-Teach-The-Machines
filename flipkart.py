@@ -1,6 +1,8 @@
 
 
 #importing libraries
+import warnings
+warnings.filterwarnings('ignore')
 from keras.models import Sequential
 from keras.layers import Convolution2D
 from keras.layers import MaxPooling2D
@@ -109,6 +111,19 @@ def mean_squared_error(y_true, y_pred):
 
 #loading dataframe
 data = pd.read_csv(r'training.csv')
+
+#Training only on those images which have legible coordinates
+data = data[data['x1']>=0]
+data = data[data['x2']>=0]
+data = data[data['y1']>=0]
+data = data[data['y2']>=0]
+
+data = data[data['x1']<=640]
+data = data[data['x2']<=640]
+data = data[data['y1']<=480]
+data = data[data['y2']<=480]
+
+
 
 
 #data = data.drop_duplicates(subset=['image_name','x1','x2' , 'y1' ,'y2'])
